@@ -1,0 +1,23 @@
+.contactlist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+.contactlist li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 15px;
+    width: 15%;
+    border-radius: 10px;
+}
+.contactlist button{
+    padding: 15px;
+    border: none;
+    background-color: blue;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}

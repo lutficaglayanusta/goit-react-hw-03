@@ -17,12 +17,6 @@ function App() {
 
   const [filter, setFilter] = useState("")
   
-  const handleFilter = (e) => {
-    setFilter(e.target.value)
-    const newForm = form.filter(item => item.name.indexOf(filter) !== -1)
-    setForm([...form,newForm])
-    console.log(form)
-  }
   
 
   
@@ -31,8 +25,8 @@ function App() {
     <>
       <h1>Phonebook</h1>
       <ContactForm form={form} setForm={setForm} />
-      <SearchBox filter={filter} handleFilter={handleFilter} />
-      <ContactList form={form} setForm={setForm} />
+      <SearchBox filter={filter} setFilter={setFilter} />
+      <ContactList filter={filter} form={form} setForm={setForm} />
     </>
   );
 }
