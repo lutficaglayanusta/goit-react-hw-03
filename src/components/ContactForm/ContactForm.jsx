@@ -24,7 +24,6 @@ const ContactForm = ({ form,setForm }) => {
   const handleSubmit = (values, actions) => {
     const id = nanoid()
     values.id = id
-    console.log(values)
     setForm([...form,values])
     
     actions.resetForm()

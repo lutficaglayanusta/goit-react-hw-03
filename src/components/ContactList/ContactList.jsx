@@ -6,7 +6,7 @@ const ContactList = ({ filter,form,setForm }) => {
   const handleDelete = (id) => {
     setForm(form.filter(item=> item.id !== id))
   }
-  const newForm = form.filter(item => item.name.indexOf(filter.toLowerCase()) !== -1)
+  const newForm = form.filter(item => item.name.toLowerCase().indexOf(filter.toLowerCase()) !== -1)
   
   return (
     <>
